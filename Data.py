@@ -4,64 +4,64 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}
+Chibai {}
 
-Welcome to {}
+{} Hian ka lo lawm a che
 
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
+MizoStrings bot hi i ring lo anih chuan, 
+1) Message hi chhiar zawm duh tawh suh.
+2) he chat hi delete rawh
 
-Still reading?
-You can use me to generate pyrogram and telethon string session. Use below buttons to learn more !
+I la chhiar zel tho maw?
+Pyrogram leh telethon string session siam nan min hmang thei a. A hnuaia button khu hmet la han chhiar belh teh !
 
-By @StarkBots
+By @MizoStrings
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton("Session Siam tan ang", callback_data="generate")],
+        [InlineKeyboardButton(text="Phêkpui ah kir ang", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+        [InlineKeyboardButton("Session Siam tan ang", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("Session Siam tan ang", callback_data="generate")],
+        [InlineKeyboardButton("Bot Status leh a dang te", url="https://t.me/MizoStrings")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("Engtia hman tur nge?", callback_data="help"),
+            InlineKeyboardButton("Keimahni", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
+        [InlineKeyboardButton("Bot ṭha dang te", url="https://t.me/MizoStrings")],
     ]
 
     # Help Message
     HELP = """
-✨ **Available Commands** ✨
+**Commands hman theih te** 
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Start Generating Session
-/cancel - Cancel the process
-/restart - Cancel the process
+/about - Bot chungchang hriatna
+/help - Ṭanpuina
+/start - Bot tih nun na
+/generate - Session string siam na
+/cancel - Hnathawh lai tih tawp na
+/restart - Tih that leh na
 """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+**He bot chanchin hi** 
 
-A telegram bot to generate pyrogram and telethon string session by @StarkBots
+Telegram bot pyrogram leh telethon string session  siam na, by @MizoStrings
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
+Discussion : [Mizo Bots Talk](https://t.me/MzBotsTalk)
 
 Framework : [Pyrogram](docs.pyrogram.org)
 
 Language : [Python](www.python.org)
 
-Developer : @StarkProgrammer
+Developer : @MizoStrings
     """

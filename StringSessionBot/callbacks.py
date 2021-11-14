@@ -37,13 +37,13 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         await bot.edit_message_text(
             chat_id=chat_id,
             message_id=message_id,
-            text="**Here's How to use me**\n" + Data.HELP,
+            text="**Hei hi min hman dan tur ani**\n" + Data.HELP,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.home_buttons),
         )
     elif query == "generate":
         await callback_query.message.reply(
-            "Please choose the python library you want to generate string session for",
+            "I string session siam na tur python library eng emaw ber khu thlang rawh",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
                 InlineKeyboardButton("Telethon", callback_data="telethon")
